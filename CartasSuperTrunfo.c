@@ -28,10 +28,10 @@ int main() {
   scanf("%c", &EstadoC1);
 
   printf("Código da carta (Ex: Inicial do estado + 01,02,03 ou 04): ");
-  scanf("%s", &CodigoDaCartaC1);
+  scanf("%4s", &CodigoDaCartaC1);
 
   printf("Cidade: ");
-  scanf("%s", &CidadeC1);
+  scanf("%59s", &CidadeC1);
 
   printf("População: ");
   scanf("%f", &PopulacaoC1);
@@ -47,7 +47,7 @@ int main() {
 
   // - Cadastro Segunda Carta
 
-  
+
   // Área para exibição dos dados da cidade
 
 return 0;
