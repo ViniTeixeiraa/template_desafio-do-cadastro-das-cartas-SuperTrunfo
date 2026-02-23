@@ -28,10 +28,10 @@ int main() {
   scanf("%c", &EstadoC1);
 
   printf("Código da carta (Ex: Inicial do estado + 01,02,03 ou 04): ");
-  scanf("%4s", &CodigoDaCartaC1);
+  scanf("%4s", CodigoDaCartaC1);
 
   printf("Cidade: ");
-  scanf("%59s", &CidadeC1);
+  scanf("%59s", CidadeC1);
 
   printf("População: ");
   scanf("%f", &PopulacaoC1);
@@ -46,9 +46,56 @@ int main() {
   scanf("%d", &PontosTuristicosC1);
 
   // - Cadastro Segunda Carta
+  printf("Preencha o formulario a seguir da segunda carta.\n");
+  printf("\n");
 
+  printf("Estado: ");
+  scanf("%c", &EstadoC2);
+
+  printf("Código da carta (Ex: Inicial do estado + 01,02,03 ou 04): ");
+  scanf("%4s", CodigoDaCartaC2);
+
+  printf("Cidade: ");
+  scanf("%59s", CidadeC2);
+
+  printf("População: ");
+  scanf("%f", &PopulacaoC2);
+
+  printf("Area em Km²: ");
+  scanf("%f", &AreaKmC2);
+
+  printf("PIB: ");
+  scanf("%f", &PibC2);
+
+  printf("Quantidade de pontos turisticos: ");
+  scanf("%d", &PontosTuristicosC2);
 
   // Área para exibição dos dados da cidade
+  printf("\n");
+  printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+  printf("                          Dados da Primeira Carta                    \n");
+  printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+  printf("\n");
+  printf("Estado: %c\n", EstadoC1);
+  printf("Código da carta: %s\n", CodigoDaCartaC1);
+  printf("Cidade: %s\n", CidadeC1);
+  printf("População: %.0f\n", PopulacaoC1);
+  printf("Area em Km²: %.2f\n", AreaKmC1);
+  printf("PIB: %.2f\n", PibC1);
+  printf("Quantidade de pontos turisticos: %d\n", PontosTuristicosC1);
+
+  printf("\n");
+  printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+  printf("                          Dados da Segunda Carta                     \n");
+  printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+  printf("\n");
+  printf("Estado: %c\n", EstadoC2);
+  printf("Código da carta: %s\n", CodigoDaCartaC2);
+  printf("Cidade: %s\n", CidadeC2);
+  printf("População: %.0f\n", PopulacaoC2);
+  printf("Area em Km²: %.2f\n", AreaKmC2);
+  printf("PIB: %.2f\n", PibC2);
+  printf("Quantidade de pontos turisticos: %d\n", PontosTuristicosC2);
 
 return 0;
 } 
