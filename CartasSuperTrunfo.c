@@ -14,6 +14,14 @@ int main() {
   float PibC1, PibC2;
   int PontosTuristicosC1, PontosTuristicosC2;
   // Área para entrada de dados
+  printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+  printf("                            Cadastro de Cartas                       \n");
+  printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+  printf("\n");
+
+  //-Cadastro da primeira carta
+  printf("Digite o Estado: ");
+
 
   // Área para exibição dos dados da cidade
 
