@@ -44,6 +44,7 @@ int main() {
 
   printf("Quantidade de pontos turisticos: ");
   scanf("%d", &PontosTuristicosC1);
+  printf("\n");
 
   // - Cadastro Segunda Carta
   printf("Preencha o formulario a seguir da segunda carta.\n");
@@ -73,7 +74,7 @@ int main() {
   // Área para exibição dos dados da cidade
   printf("\n");
   printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
-  printf("                          Dados da Primeira Carta                    \n");
+  printf("                            Primeira Carta                           \n");
   printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
   printf("\n");
   printf("Estado: %c\n", EstadoC1);
@@ -86,7 +87,7 @@ int main() {
 
   printf("\n");
   printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
-  printf("                          Dados da Segunda Carta                     \n");
+  printf("                            Segunda Carta                            \n");
   printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
   printf("\n");
   printf("Estado: %c\n", EstadoC2);
