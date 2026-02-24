@@ -9,7 +9,7 @@ int main() {
   char EstadoC1, EstadoC2;
   char CodigoDaCartaC1[4], CodigoDaCartaC2[4];
   char CidadeC1[60], CidadeC2[60];
-  int PopulacaoC1, PopulacaoC2;
+  float PopulacaoC1, PopulacaoC2;
   float AreaKmC1, AreaKmC2;
   float PibC1, PibC2;
   int PontosTuristicosC1, PontosTuristicosC2;
@@ -25,13 +25,13 @@ int main() {
   printf("\n");
 
   printf("Estado: ");
-  scanf("%c", &EstadoC1);
+  scanf(" %c", &EstadoC1);
 
   printf("Código da carta (Ex: Inicial do estado + 01,02,03 ou 04): ");
   scanf("%4s", CodigoDaCartaC1);
 
   printf("Cidade: ");
-  scanf("%59s", CidadeC1);
+  fgets(CidadeC1, sizeof(CidadeC1), stdin);
 
   printf("População: ");
   scanf("%f", &PopulacaoC1);
@@ -57,7 +57,7 @@ int main() {
   scanf("%4s", CodigoDaCartaC2);
 
   printf("Cidade: ");
-  scanf("%59s", CidadeC2);
+  fgets(CidadeC2, sizeof(CidadeC2), stdin);
 
   printf("População: ");
   scanf("%f", &PopulacaoC2);
