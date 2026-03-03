@@ -6,8 +6,8 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
- char EstadoC1; 
- char EstadoC2;
+ char EstadoC1 [60]; 
+ char EstadoC2 [60];
  char CodigoCartaC1 [4]; 
  char CodigoCartaC2 [4];
  char CidadeC1 [60]; 
@@ -87,7 +87,7 @@ int main() {
   printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
   printf("                            Primeira Carta                           \n");
   printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
-  printf("Estado: %c \n", EstadoC1);
+  printf("Estado: %s \n", EstadoC1);
   printf("Código: %3s \n", CodigoCartaC1);
   printf("Cidade: %s \n", CidadeC1);
   printf("População: %.3f \n", PopulacaoC1);
@@ -102,7 +102,7 @@ int main() {
   printf("                            Segunda Carta                            \n");
   printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
   printf("\n");
-  printf("Estado: %c \n", EstadoC2);
+  printf("Estado: %s \n", EstadoC2);
   printf("Código: %3s \n", CodigoCartaC2);
   printf("Cidade: %s \n", CidadeC2);
   printf("População: %.3f \n", PopulacaoC2);
