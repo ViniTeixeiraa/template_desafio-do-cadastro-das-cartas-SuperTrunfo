@@ -20,10 +20,10 @@ int main() {
  float PIBc2;
  int PontosTuristicosC1; 
  int PontosTuristicosC2;
- float DensidadePopulacionalC1 = PopulacaoC1 / AreaC1;
- float DensidadePopulacionalC2 = PopulacaoC2 / AreaC2;
- float PIBperCapitaC1 = PIBc1 / PopulacaoC1;
- float PIBperCapitaC2 = PIBc2 / PopulacaoC2;
+ float DensidadePopulacionalC1;
+ float DensidadePopulacionalC2;
+ float PIBperCapitaC1;
+ float PIBperCapitaC2;
 
   // Área para entrada de dados
   printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
@@ -36,13 +36,13 @@ int main() {
   printf("\n");
 
   printf ("Estado: ");
-  scanf (" %c", &EstadoC1);
+  scanf (" %59s", EstadoC1);
 
   printf ("Código da Carta (Letra do Estado + numero de '01' a '04'): ");
   scanf ("%4s", CodigoCartaC1);
 
   printf ("Cidade: ");
-  scanf ("%49s", CidadeC1);
+  scanf ("%59s", CidadeC1);
      
   printf ("População: ");
   scanf ("%f", &PopulacaoC1);
@@ -61,13 +61,13 @@ int main() {
   printf("\n");
 
   printf("Estado: ");
-  scanf(" %c", &EstadoC2);
+  scanf(" %59s", EstadoC2);
 
   printf ("Código da Carta (Letra do Estado + numero de '01' a '04'): ");
   scanf ("%4s", CodigoCartaC2);
 
   printf ("Cidade: ");
-  scanf ("%49s", CidadeC2);
+  scanf ("%59s", CidadeC2);
      
   printf ("População: ");
   scanf ("%f", &PopulacaoC2);
@@ -81,6 +81,11 @@ int main() {
   printf ("Quantos Pontos Turísticos: ");
   scanf ("%d", &PontosTuristicosC2);
 
+  //Calculo da Densidade Populacional e PIB per Capita
+  DensidadePopulacionalC1 = PopulacaoC1 / AreaC1;
+  DensidadePopulacionalC2 = PopulacaoC2 / AreaC2;
+  PIBperCapitaC1 = PIBc1 / PopulacaoC1;
+  PIBperCapitaC2 = PIBc2 / PopulacaoC2;
 
   // Área para exibição dos dados da cidade
   printf("\n");
